@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Healthy World </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="formulario.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function validar() {
+      let name = document.ex4.name.value;
+      name = String(name);
+      let password = document.ex4.password.value;
+      password = String(password);
+
+      if (document.ex4.name.value === "") {
+        window.alert("Preenchimento do campo nome é obrigatório");
+        document.ex4.name.focus();
+        return false
+      }
+
+      if (document.ex4.password.value === "") {
+        window.alert("Preenchimento do campo senha é obrigatório");
+        document.ex4.password.focus();
+        return false
+      }
+
+      if (password.length < 6) {
+        window.alert("A senha deve conter mais de 6 caracteres! Crie uma nova senha");
+        document.ex4.password.focus();
+        return false
+      }
+
+      if (name.length < 4) {
+        window.alert("O login deve conter mais de 4 caracteres! Crie um novo login");
+        document.ex4.name.focus();
+        return false
+      }
+    }
+
+
+    function send() {
+      if (validar() === false) {
+        window.alert("ERRO! Dados inválidos, Preencha o formulário novamente!");
+        return false
+
+      } else {
+        window.alert("Dados enviados com sucesso!");
+        return true
+
+      }
+
+    }
+  </script>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1>JUNTE-SE A NÓS</h1>
+      <p> Faça parte desse movimento! </p>
+      <form name="ex4">
+        <div class="input-group">
+          <div class="input-field">
+            <input type="text" name="name" placeholder="digite o nome com mais de 4 caracteres ">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="email" placeholder="Email">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="password" name="password" placeholder="digite uma senha com mais de 6 caracteres"
+              onclick="foco()">
+            <i class="fa fa-key" aria-hidden="true"></i>
+          </div>
+
+          <div class="input-field">
+            <input type="text" placeholder="(xx)xxxxx-xxxx">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+        </div>
+        
+
+          <div class="input-field">
+            <input required="" type="text" class="form-control" placeholder="Data de nascimento" onfocus="(this.type='date')"/>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </div>
+        
+
+            
+          <div class="btn-field">
+          <button type="submit" name="send" onclick="validar()">Realizar Cadastro</button>
+        </div>
+      </form>
+      <button class="home">
+        <a href="index.html"><img src="R.png" class="icon" width="50px" height="50px"></a>
+      </button>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer_content">
+      <p> Guilherme Dias 42327938 </p>
+      <p> © 2023 My Website </p>
+    </div>
+  </footer>
+</body>
+
+</html>

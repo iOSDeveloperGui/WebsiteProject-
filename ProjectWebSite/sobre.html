@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script> 
+    function active(){
+      var quest = confirm("Prosseguir para a tela de cadastro? :)");
+
+      if (quest == true){
+        window.location.href = "formulary.html";
+      } else if (quest !== true) {
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+  </style>
+    <title> Healthy World </title>
+  <link href="sobre.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="plant_8445275.png" alt="logo" width="100px">
+      <h1 class="title"> Healthy World </h1>
+    </div>
+    <!-- <div class="element">
+      <img src="element1.png" width="150%">
+    </div> -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plante.html">Plante</a></li>
+        <li><a href="cultive.html">Cultive</a></li>
+        <li><a href="">Sobre</a></li>
+        <li><a href="formulary.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <article id="article3">
+    <section class="content3">
+      <div class="img_content3">
+        <img src="me.png" width="50%">
+        <div class="text_content3">
+          <h1> SOBRE MIM </h1>
+          <br>
+          <br>
+          <p> Me chamo Guilherme, tenho 22 anos, nasci em São Paulo e sou aluno do primeiro semestre do curso de Sistemas de Informação na Universidade Presbiteriana Mackenzie. </p>
+          <br>
+          
+
+          <p> Um dos principais conceitos desse projeto é conscientizar sobre a importância da natureza em nossas vidas. É imprescindível não notar o quanto as plantas e a natureza estão presentes no nosso dia a dia. O site Healthy World tem o intuito de informar que se cada um fazer a sua parte nós podemos conviver em um mundo mais saudável e habitável. </p>
+
+          <hr>
+          <br>
+          <h3> Vídeo informativo sobre o Projeto: </h3>
+          <br>
+          <br>
+            <video width="500" height="500" controls>
+               <source src="video_informativo.mp4" class="video_mp4"   type="video/mp4">
+           </video>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <footer id="footer">
+    <div class="footer_content">
+      <p> Guilherme Dias 42327938 </p>
+      <p> © 2023 My Website </p>
+    </div>
+  </footer>
+</body>
+</html>

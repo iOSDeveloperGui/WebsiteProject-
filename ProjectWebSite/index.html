@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Guilherme Silva Dias">
+  <meta name="description" content="Healthy World">
+  <script>
+    function active() {
+      var quest = confirm("Prosseguir para a tela de cadastro? :)");
+
+      if (quest == true) {
+        window.location.href = "formulary.html";
+      } else if (quest !== true) {
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+  </style>
+  <title> Healthy World </title>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="plant_8445275.png" alt="logo" width="100px">
+      <h1 class="title"> Healthy World </h1>
+    </div>
+    <!-- <div class="element">
+      <img src="element1.png" width="150%">
+    </div> -->
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plante.html">Plante</a></li>
+        <li><a href="cultive.html">Cultive</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="formulary.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content_main">
+    <section class="main_section">
+      <div class="col_1">
+        <h2> A Natureza <br> é a Chave para a vida </h2>
+        <p> Ela nos fornece tudo o que precisamos para sobreviver.</p>
+        <button OnClick="active()"> Faça parte </button>
+      </div>
+    </section>
+  </main>
+
+
+  <article id="article2">
+    <section class="content">
+      <br>
+      <img src="monstera-deliciosa-plant-pot.jpg" width="250%">
+      <br>
+      <hr>
+      <br>
+      <h1> FUNÇÃO DAS PLANTAS </h1>
+      <p><br>As plantas são organismos protetores do planeta terra, pois realizam a manutenção e gestão dos eventos
+        ambientais a todo instante. Elas produzem oxigênio junto com as algas, protegem o solo de erosão e deslizamentos
+        e participam do ciclo da água.</p>
+
+      <p><br>São os produtores da cadeia alimentar, ou seja, alimentam todos os seres vivos, de forma direta ou
+        indireta. Servem de medicamento, pois possuem substâncias de interesse medicinal para a ciência e são utilizadas
+        na construção civil. </p>
+      <br>
+      <br>
+
+    </section>
+  </article>
+
+  <article id="article3">
+    <section class="content3">
+      <div class="img_content3">
+        <img src="3d_tree.jpg" width="100%">
+        <div class="text_content3">
+          <h1> Origem das Plantas </h1>
+          <br>
+          <br>
+          <p> A história evolutiva das plantas é uma fascinante narrativa de adaptação e diversificação ao longo de
+            centenas de milhões de anos. A partir de ancestrais unicelulares, as plantas evoluíram para uma vasta
+            variedade de formas e estruturas, ocupando quase todos os ambientes terrestres e aquáticos do nosso planeta.
+
+            A origem das plantas remonta a aproximadamente 500 milhões de anos, quando os primeiros organismos
+            fotossintéticos multicelulares surgiram nos oceanos. Essas primitivas plantas aquáticas, conhecidas como
+            algas verdes, foram as precursoras das plantas terrestres que conhecemos hoje. A transição para o ambiente
+            terrestre foi um marco crucial na evolução das plantas, pois exigiu adaptações significativas para enfrentar
+            os desafios impostos pela falta de água e pela gravidade. </p>
+          <button id="button_2"><a href="plante.html"> Aprenda a plantar agora mesmo :) </a> </button>
+        </div>
+      </div>
+
+    </section>
+  </article>
+
+  <footer id="footer">
+    <div class="footer_content">
+      <p> Guilherme Dias 42327938 </p>
+      <p> © 2023 My Website </p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

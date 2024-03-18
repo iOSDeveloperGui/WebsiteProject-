@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media (min-width: 580px) and (max-width: 1024px) {}
+
+
+.logo {
+  background-image: url("gradient_background.png");
+  text-align: center;
+  padding: 10px 40px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#eee, #ffffff);
+  text-shadow: 1px 1px #b5ead7;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.element {
+  position: absolute;
+  display: flex;
+  top: -100px;
+  left: -285px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.nav-bar {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  background-color: #78e89f;
+  height: 40%;
+  max-width: 100%;
+}
+
+.nav-bar ul li {
+  margin-top: 10px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+header li a:hover {
+  color: #0c6e2f;
+  background-color: #ffffff;
+}
+
+
+#article3 {
+  margin: 0;
+  padding: 15px;
+  height: auto;
+  background-color: #e0fbe9ff;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_content3 {
+  display: flex;
+  vertical-align: top;
+}
+
+
+.img_content3 img {
+  position: relative;
+  top: 30px;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  vertical-align: top;
+  width: 50%;
+  height: 50%;
+  border-radius: 60px;
+}
+
+.img_content3 h1 {
+  text-align: center;
+  color: #166431;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.img_content3 p {
+  text-align: left;
+  color: #063717;
+  font-size: 20px;
+}
+
+.text_content3 {
+  padding: 12px;
+}
+
+video {
+  margin-top: -200px;
+  width: 100%;
+}
+
+footer {
+  height: auto;
+  background-color: #25a753;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: #ffffff;
+
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .nav-bar ul li {
+    margin-top: 10px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .img_content3 h1{
+    font-size: 25px;
+  }
+
+  .img_content3 p {
+    text-align: center;
+}
